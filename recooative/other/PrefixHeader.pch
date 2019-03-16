@@ -1,0 +1,18 @@
+//
+//  PrefixHeader.pch
+//  recooative
+//
+//  Created by 张闯闯 on 2019/3/15.
+//  Copyright © 2019 张闯闯. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#import "ReactiveObjC.h"
+
+#endif /* PrefixHeader_pch */
+

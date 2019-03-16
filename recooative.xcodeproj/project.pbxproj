@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D2C089DC0B907EBD4DB505A /* Pods_recooative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF4C97C372180476FD20AE7 /* Pods_recooative.framework */; };
 		F4CAA19A223A538400021926 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CAA199223A538400021926 /* AppDelegate.m */; };
 		F4CAA19D223A538400021926 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CAA19C223A538400021926 /* ViewController.m */; };
 		F4CAA1A0223A538400021926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CAA19E223A538400021926 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		F4CAA1A8223A538600021926 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CAA1A7223A538600021926 /* main.m */; };
 		F4CAA1B2223A538600021926 /* recooativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CAA1B1223A538600021926 /* recooativeTests.m */; };
 		F4CAA1BD223A538600021926 /* recooativeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CAA1BC223A538600021926 /* recooativeUITests.m */; };
+		F4D1E43D223B40A700A2981B /* testView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D1E43C223B40A700A2981B /* testView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		602DA13D56AB05ADC48EB6D1 /* Pods-recooative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recooative.debug.xcconfig"; path = "Target Support Files/Pods-recooative/Pods-recooative.debug.xcconfig"; sourceTree = "<group>"; };
+		ABF4C97C372180476FD20AE7 /* Pods_recooative.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_recooative.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0C76A927C78F9B2CFD72D49 /* Pods-recooative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recooative.release.xcconfig"; path = "Target Support Files/Pods-recooative/Pods-recooative.release.xcconfig"; sourceTree = "<group>"; };
 		F4CAA195223A538400021926 /* recooative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recooative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4CAA198223A538400021926 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F4CAA199223A538400021926 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +56,9 @@
 		F4CAA1B8223A538600021926 /* recooativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = recooativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4CAA1BC223A538600021926 /* recooativeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = recooativeUITests.m; sourceTree = "<group>"; };
 		F4CAA1BE223A538600021926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4D1E43B223B40A700A2981B /* testView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testView.h; sourceTree = "<group>"; };
+		F4D1E43C223B40A700A2981B /* testView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testView.m; sourceTree = "<group>"; };
+		F4D1E441223B447300A2981B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D2C089DC0B907EBD4DB505A /* Pods_recooative.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19E2E755D3D242C3C9770A87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				602DA13D56AB05ADC48EB6D1 /* Pods-recooative.debug.xcconfig */,
+				B0C76A927C78F9B2CFD72D49 /* Pods-recooative.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4FC6CB1133E22244A732FA1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABF4C97C372180476FD20AE7 /* Pods_recooative.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F4CAA18C223A538400021926 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +111,8 @@
 				F4CAA1B0223A538600021926 /* recooativeTests */,
 				F4CAA1BB223A538600021926 /* recooativeUITests */,
 				F4CAA196223A538400021926 /* Products */,
+				19E2E755D3D242C3C9770A87 /* Pods */,
+				4FC6CB1133E22244A732FA1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +129,12 @@
 		F4CAA197223A538400021926 /* recooative */ = {
 			isa = PBXGroup;
 			children = (
-				F4CAA198223A538400021926 /* AppDelegate.h */,
-				F4CAA199223A538400021926 /* AppDelegate.m */,
-				F4CAA19B223A538400021926 /* ViewController.h */,
-				F4CAA19C223A538400021926 /* ViewController.m */,
-				F4CAA19E223A538400021926 /* Main.storyboard */,
 				F4CAA1A1223A538600021926 /* Assets.xcassets */,
-				F4CAA1A3223A538600021926 /* LaunchScreen.storyboard */,
 				F4CAA1A6223A538600021926 /* Info.plist */,
 				F4CAA1A7223A538600021926 /* main.m */,
+				F4D1E440223B445200A2981B /* Tool */,
+				F4D1E43E223B40B600A2981B /* other */,
+				F4D1E43F223B40CB00A2981B /* view */,
 			);
 			path = recooative;
 			sourceTree = "<group>";
@@ -132,6 +157,36 @@
 			path = recooativeUITests;
 			sourceTree = "<group>";
 		};
+		F4D1E43E223B40B600A2981B /* other */ = {
+			isa = PBXGroup;
+			children = (
+				F4CAA198223A538400021926 /* AppDelegate.h */,
+				F4CAA199223A538400021926 /* AppDelegate.m */,
+				F4CAA19B223A538400021926 /* ViewController.h */,
+				F4CAA19C223A538400021926 /* ViewController.m */,
+				F4CAA19E223A538400021926 /* Main.storyboard */,
+				F4CAA1A3223A538600021926 /* LaunchScreen.storyboard */,
+				F4D1E441223B447300A2981B /* PrefixHeader.pch */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		F4D1E43F223B40CB00A2981B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F4D1E43B223B40A700A2981B /* testView.h */,
+				F4D1E43C223B40A700A2981B /* testView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F4D1E440223B445200A2981B /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4CAA1C1223A538600021926 /* Build configuration list for PBXNativeTarget "recooative" */;
 			buildPhases = (
+				921590CCE5B7422003AC8E31 /* [CP] Check Pods Manifest.lock */,
 				F4CAA191223A538400021926 /* Sources */,
 				F4CAA192223A538400021926 /* Frameworks */,
 				F4CAA193223A538400021926 /* Resources */,
+				9E47218713B9C1218DD6DB9F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,11 +314,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		921590CCE5B7422003AC8E31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-recooative-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E47218713B9C1218DD6DB9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-recooative/Pods-recooative-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-recooative/Pods-recooative-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F4CAA191223A538400021926 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4D1E43D223B40A700A2981B /* testView.m in Sources */,
 				F4CAA19D223A538400021926 /* ViewController.m in Sources */,
 				F4CAA1A8223A538600021926 /* main.m in Sources */,
 				F4CAA19A223A538400021926 /* AppDelegate.m in Sources */,
@@ -433,10 +538,13 @@
 		};
 		F4CAA1C2223A538600021926 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 602DA13D56AB05ADC48EB6D1 /* Pods-recooative.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49S365C6A7;
+				GCC_PREFIX_HEADER = /Users/zhangchuangchuang/Desktop/recooative/recooative/other/PrefixHeader.pch;
 				INFOPLIST_FILE = recooative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -444,16 +552,20 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zc.recooative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		F4CAA1C3223A538600021926 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0C76A927C78F9B2CFD72D49 /* Pods-recooative.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49S365C6A7;
+				GCC_PREFIX_HEADER = /Users/zhangchuangchuang/Desktop/recooative/recooative/other/PrefixHeader.pch;
 				INFOPLIST_FILE = recooative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -461,6 +573,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zc.recooative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
