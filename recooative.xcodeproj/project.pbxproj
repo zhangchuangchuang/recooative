@@ -129,6 +129,8 @@
 		F4CAA197223A538400021926 /* recooative */ = {
 			isa = PBXGroup;
 			children = (
+				F4CAA198223A538400021926 /* AppDelegate.h */,
+				F4CAA199223A538400021926 /* AppDelegate.m */,
 				F4CAA1A1223A538600021926 /* Assets.xcassets */,
 				F4CAA1A6223A538600021926 /* Info.plist */,
 				F4CAA1A7223A538600021926 /* main.m */,
@@ -160,8 +162,6 @@
 		F4D1E43E223B40B600A2981B /* other */ = {
 			isa = PBXGroup;
 			children = (
-				F4CAA198223A538400021926 /* AppDelegate.h */,
-				F4CAA199223A538400021926 /* AppDelegate.m */,
 				F4CAA19B223A538400021926 /* ViewController.h */,
 				F4CAA19C223A538400021926 /* ViewController.m */,
 				F4CAA19E223A538400021926 /* Main.storyboard */,

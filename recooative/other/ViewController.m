@@ -10,6 +10,7 @@
 #import "testView.h"
 @interface ViewController ()
 @property (nonatomic,strong) testView *test_view;
+@property (nonatomic,strong) UITextField *test_filed;//文本框
 @end
 
 @implementation ViewController
@@ -93,9 +94,25 @@
 }
 //RACCommand
 -(void)test4{
-//    RACCommand *command = [RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
-//        
-//    }];
+    RACCommand *command = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+        NSLog(@"执行命令");
+        return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+            [subscriber sendNext:@"请求数据"];
+            //注意：数据传递完，最好调用sendcompleted,这时命令才执行完毕
+            [subscriber sendCompleted];
+            return nil;
+        }];
+    }];
+    //强引用命令，不要被销毁，否则接受不到数据
     
+    
+}
+
+-(void)test5{
+    [self.test_filed.rac_textSignal bind:^RACSignalBindBlock _Nonnull{
+        return ^RACStream *(id value,BOOL *stop){
+            
+        };
+    }]
 }
 @end
